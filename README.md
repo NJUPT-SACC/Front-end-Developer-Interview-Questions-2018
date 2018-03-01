@@ -18,3 +18,9 @@
 - [Front End Developer Questions](http://markyun.github.io/2015/Front-end-Developer-Questions/)
 - [关于网络请求的面试题总结](https://zhuanlan.zhihu.com/p/32565654?utm_source=com.tencent.tim&utm_medium=social)
 - [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
+
+## diaotai 的面试资料分享 
+- [教你手撸一个React](https://www.gitbook.com/book/swennemans/building-your-own-react-js/details)
+- [2018美团面试题](https://juejin.im/post/5a96c6326fb9a063626408c8)
+- [React源码解读](https://zhuanlan.zhihu.com/p/32520194)
+- [前端面经](https://www.nowcoder.com/discuss/64136)
