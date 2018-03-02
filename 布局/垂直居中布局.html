@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直居中布局</title>
+</head>
+<style>
+     /* 绝对定位 */
+    main{
+        position: relative;
+        height: 500px;
+        background-color: blue;
+    }
+    main>div{
+        position: absolute;
+        /* transform: translate(-50%,-50%); */ /* 第一种 */
+        margin:-25px 0 0 -25px;/* 第二种 */
+        top: 50%;
+        left: 50%;
+        background-color: aquamarine;
+        width: 50px;
+        height: 50px;
+    }
+    /* flex布局 第三种*/
+    /* main{
+        display: flex;
+        background-color: blue;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+    main>div{
+        background-color: wheat;
+        height: 50px;
+        width: 50px;
+    } */
+</style>
+<body>
+    <main>
+        <div>垂直的方块</div>
+    </main>
+</body>
+</html>

@@ -59,29 +59,60 @@
 ## CSS
 
 1. 圣杯布局/双飞翼布局的实现
+	答：看示例
 2. 垂直居中布局如何实现
+	答：看示例
 3. 权重的计算（CSS优先级算法如何计算）
-4. box-size的各个值（对盒模型的理解）
+	答：标签为1，类名为10，id为100，内联样式为1000，如 div .test1 #555 = 1 + 10 +100 = 111。如果加上！import，权重为最高。
+4. box-sizing的各个值（对盒模型的理解）
+	答：①content-box: 修改width/height的时候只修改content的width/height②padding-box: 修改width/height的时候修改content+padding的width/height③border-box:修改width/height的时候修改content+padding+border的width/height④inherit：从父元素里继承box-sizing
 5. float有什么影响，如何去除float的影响
+	答：最常用的.clear::after{display:table;content:'';clear:both;*zoom:1}
 6. 描述下BFC
+	答：块级格式化上下文，BFC子元素不会影响外部元素，可以把BFC看成一个盒子，盒子里的东西不能影响外面的东西。触发BFC的条件：满足以下任意一项即可：①body根元素②float不为None③position：absolute/fixed④overflow:hidden/auto/scoll⑤display:inline-block/table-cells/flex
 7. class与id的区别
+	答：①权重不同②class一般用于多个元素重复使用的样式、id用于一个元素的样式
 8. 浏览器如何判断一个元素匹配某个CSS选择器（浏览器是怎样解析CSS选择器的）
-9. 响应式设计与自适应设计的不同
+	答：从右往左匹配，如果在匹配过程中遇到不同的，就放弃该次匹配，如要匹配body .main .example
+	```
+	<body>
+		<div class="main"><span class="example"></span></div> /* ① */
+		<div class="mainAnother"><span class="example"></span></div>  /* ② * /
+	</body>
+	```
+	①会先找到.example 然后找到其父元素.main,再到body，发现无错误，所以应用该样式②会先找到.example 然后找到其父元素.mainAnother,发现不匹配，放弃该次匹配
+<s>9. 响应式设计与自适应设计的不同</s>
 10. display有哪些值分别有什么作用
+	答：inherit：继承父类；block 块级；inline-block 内联块状；table ;表格；none 隐藏；flex 弹性盒子布局。
 11. absolute与relative定位原理
+	答： absolute相对离自己最近的第一个定位不为static的父元素定位，relative相对原位置（文档流定位）。
 12. 解释下flexbox以及其应用场景
+	答： 弹性盒子布局适用于响应式设计，不适用于移动端，整体网页
 13. 元素横、竖向的百分比设定是相对于什么
+	答： ①相对于父元素的width：width，left，right，padding，margin；
+②相对于父元素的height：height，top，bottom，padding，margin；③相对于继承字号：font-size;④line-height:相对于父元素高度
 14. ::before 和 :after中双冒号和单冒号区别
+	答：①双冒号是伪元素②单冒号是伪类
 15. style标签写在body后与body区别
+	答： body前先渲染，body后后渲染
 16. 对line-height的理解
+	答： ①line-height通过line-boxes实现，line-boxes的高度取决于它的包裹元素的最高高度，因此line-height也是具有高度的。在某些情形下可以用line-height代替height。②vertical-align的百分比是基于line-height来计算的。③非阅读站推荐设置行高为20px，阅读站推荐设置为1.5/1.6（by张鑫旭）
 17. 什么是媒体查询
+	答： ①@media only screen and (max-width:设定宽度){xxx} 小于该设定宽度时应用设定的样式 ②@media only screen and (min-width:设定宽度){xxx} 大于该设定宽度时应用设定的样式
 18. CSS优化、提高性能的方法有哪些
+	答： ① 代码压缩 ② 避免CSS表达式 ③ 少用import ④ 渲染性能优化
 19. margin和padding分别适合什么场景使用
+	答： 外边距margin改变元素与元素之间的间距，padding改变的是元素内容与元素框之间的间距，所以称为补白、内边距。
 20. link 和@import 的区别
+	答： ①link 是HTML的标签，兼容性比@import强（@import在IE5以下不兼容）②加载顺序：@import的内容会等到页面全部被下载完再被加载
 21. 流式布局与响应式布局的区别
+	答： ①流式布局在CSS2时代就有，主要是靠百分比进行排版，可以在不同分辨率下显示相同的版式②响应式布局主要应该媒体查询，可以在不同的分辨率下对元素重新设定样式（不仅仅是尺寸），可以在不同屏幕下显示不同的版式。
 22. 行内元素有哪些？块级元素有哪些？ 空(void)元素有哪些？
+	答：①行内：input、image、span、a、b、select、strong②块级：div、p、h1-h4...、ul、ol、li、dt、dd、dl③空元素：br、hr、link、meta
 23. css层叠上下文及顺序
+	答：元素按层叠顺序展示谁能覆盖在表面，七阶顺序：①层叠上下文的background/border②负的z-index③block块状水平盒子④float浮动盒子⑤inline/inline-block水平盒子⑥z-index:auto/0 ⑦正z-index
 24. css3新特性有哪些？
+	答：选择器、圆角（border-radius）、多列布局（multi-column layout）、阴影和反射（Shadow\Reflect）、文字特效（text-shadow）、文字渲染（text-decoration）、线性渐变（gradient）、旋转（transform）、缩放（transfrom）、定位（translate）、动画（animation）
 
 ---
 
