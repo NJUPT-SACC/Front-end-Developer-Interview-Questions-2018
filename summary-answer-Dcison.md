@@ -81,7 +81,7 @@
 	</body>
 	```
 	①会先找到.example 然后找到其父元素.main,再到body，发现无错误，所以应用该样式②会先找到.example 然后找到其父元素.mainAnother,发现不匹配，放弃该次匹配
-<s>9. 响应式设计与自适应设计的不同</s>
+9. <s>响应式设计与自适应设计的不同</s>
 10. display有哪些值分别有什么作用
 	答：inherit：继承父类；block 块级；inline-block 内联块状；table ;表格；none 隐藏；flex 弹性盒子布局。
 11. absolute与relative定位原理
