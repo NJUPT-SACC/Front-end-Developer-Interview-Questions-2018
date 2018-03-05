@@ -20,7 +20,10 @@
 - [关于网络请求的面试题总结](https://zhuanlan.zhihu.com/p/32565654?utm_source=com.tencent.tim&utm_medium=social)
 - [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
 - [【译】JavaScript 权威面试指南](https://juejin.im/entry/5a27b5ba6fb9a044fa19bcc4)
-
+- [总结伪类与伪元素](http://www.alloyteam.com/2016/05/summary-of-pseudo-classes-and-pseudo-elements/)
+- [同源策略和跨域访问](http://blog.csdn.net/shimiso/article/details/21830313)
+- [前端跨域的整理](https://qiutc.me/post/cross-domain-collections.html?utm_source=tuicool&utm_medium=referral)
+- [JS四种跨域方式详解](https://segmentfault.com/a/1190000003642057?utm_source=tuicool)
 ## diaotai 的面试资料分享 
 - [教你手撸一个React](https://www.gitbook.com/book/swennemans/building-your-own-react-js/details)
 - [2018美团面试题](https://juejin.im/post/5a96c6326fb9a063626408c8)
