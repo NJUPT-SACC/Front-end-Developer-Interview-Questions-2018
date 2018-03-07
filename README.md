@@ -41,5 +41,8 @@
 ## diaotai 的面试资料分享 
 - [教你手撸一个React](https://www.gitbook.com/book/swennemans/building-your-own-react-js/details)
 - [2018美团面试题](https://juejin.im/post/5a96c6326fb9a063626408c8)
+- [2017腾讯面试提](http://www.imweb.io/topic/tab/special)
+- [CSS百分数通解](https://www.jianshu.com/p/77e197c5256f)
+- [重绘和重排](http://www.yodfz.com/detail/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%87%8D%E7%BB%98%E5%92%8C%E5%9B%9E%E6%B5%81.html)
 - [React源码解读](https://zhuanlan.zhihu.com/p/32520194)
 - [前端面经](https://www.nowcoder.com/discuss/64136)
