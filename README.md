@@ -12,7 +12,11 @@
 ## dcison 的面试资料分享
 - 总结的一些题目，见summary.md
 - [面试分享：2018阿里巴巴前端面试总结(题目+答案)](https://funteas.com/topic/5a98cce637621be1429268ee)
-
+- [面试的信心来源于过硬的基础](https://segmentfault.com/a/1190000013331105)
+- [前端开发面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
+- [前端工作面试问题](https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese)
+- [12个HTML和CSS必须知道的重点难点问题](https://juejin.im/post/5a954add6fb9a06348538c0d)
+- [2017年前端面试题](http://www.imooc.com/article/20319)
 
 ---
 ## PrConstantin 的面试资料分享 blog -> [constantin.cc](http://constantin.cc/)
