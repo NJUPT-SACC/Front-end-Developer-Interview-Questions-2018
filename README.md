@@ -7,10 +7,12 @@
 直接在readme里新增下划线然后起个自己的标题，以列表形式添加每个资料，url直接以题目链接添加，
 就像下面这样，也可以直接新建文件来添加，祝大家都能找到好工作，一起干巴得！
 
+
 --- 
 ## dcison 的面试资料分享
-- 总结的一些题目（答案未写上去），见summary.md
+- 总结的一些题目，见summary.md
 - [面试分享：2018阿里巴巴前端面试总结(题目+答案)](https://funteas.com/topic/5a98cce637621be1429268ee)
+
 
 ---
 ## PrConstantin 的面试资料分享 blog -> [constantin.cc](http://constantin.cc/)
