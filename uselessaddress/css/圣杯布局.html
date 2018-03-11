@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>圣杯布局</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-width: 700px;
+    }
+    .header,
+    .footer {
+      border: 1px solid #333;
+      background: #aaa;
+      text-align: center;
+    }
+
+    .left,
+    .middle,
+    .right {
+      position: relative;
+      float: left;
+      height: 130px;
+    }
+    .container {
+      padding: 0 220px 0 200px;
+      overflow: hidden;
+    }
+    .left {
+      margin-left: -100%;
+      left: -200px;
+      width: 200px;
+      background: red;
+    }
+    .right {
+      margin-left: -220px;
+      right: -220px;
+      width: 220px;
+      background: green;
+    }
+    .middle {
+      width: 100%;
+      background: blue;
+      word-break: break-all;
+    }
+    .footer {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h4>header</h4>
+  </div>
+  <div class="container">
+    <div class="middle">
+      <h4>middle</h4>
+      <p>HHHHHHHHHHHHHHHHHHHHHH hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh HHHHHHHHHHHHHHHHHHHHHH hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+      </p>
+    </div>
+    <div class="left">
+      <h4>left</h4>
+      <p>oooooooooooooo 0000000000000000 00000000000000000 ooooooooooooooo ooooooooooooooo 000000000000000
+      </p>
+    </div>
+    <div class="right">
+      <h4>right</h4>
+      <p>BBBBBBBBBBBBBB 888888888888888888 BBBBBBBBBBBBBBBBBB 88888888888888888888
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <h4>footer</h4>
+  </div>
+</body>
+
+</html>
