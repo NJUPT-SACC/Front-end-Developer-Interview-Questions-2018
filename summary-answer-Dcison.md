@@ -463,7 +463,7 @@
 	答：webpack是一款模块加载兼打包工具，它可以将js、jsx、coffee、样式sass、less，图片等作为模块来使用和处理。以commonJS的形式来书写脚本，对AMD、CMD的支持也很全面，方便旧项目的迁移。能被模块化的不止是JS了。能替代部分grunt/gulp的工作，例如打包，压缩混淆，图片转base64等。扩展性强，插件机制完善，支持React热拔插。
 10. 说下你用过的框架的特点（React、Vue、Jquery）
 
-	答：声明式设计， Virtual DOM树，单向数据流，组件化编码，客户端与服务器渲染。
+	答：React声明式设计， Virtual DOM树，单向数据流，组件化编码，客户端与服务器渲染。
 11. React的生命周期
 
 	答：
@@ -489,10 +489,10 @@
 	答：flux 和 redux做的事，是为了保证每一个动作（状态的更改）都能映射到确切的状态，在尤其是逻辑非常庞杂的时候维护和控制单向数据流，相当于一个数据状态容器。数据流向是 action -> reducer -> store -> view - >action ->循环。
 16. 说下MVC、MVVM的区别
 
-	答：MVC中的M（Model）指数据的缓存，V（View）指渲染的视图，也负责接收用户的交互操作，C（Controler）指用户与网络之间的交互的handler。MVVM中分为M（Model） V （View）VM （ViewMode），MVVM中M与V无联系，他们通过VM进行交互，切VM与M交互是双向的，即视图的数据变化会同时修改数据源，也会立即作用到View上。也就是用数据“绑定”的形式让数据更新的事件让其自动地双向同步。
+	答：MVC中的M（Model）指数据的缓存，V（View）指渲染的视图，也负责接收用户的交互操作，C（Controler）指用户与网络之间的交互的handler。MVVM中分为M（Model） V （View）VM （ViewMode），MVVM中M与V无联系，他们通过VM进行交互，即VM与M交互是双向的，即视图的数据变化会同时修改数据源，也会立即作用到View上。也就是用数据“绑定”的形式让数据更新的事件让其自动地双向同步。
 17. MockServer特点
 
-	答： Mock Server是一种通过接口文档进行测试，将接口与数据进行分离，通过条件和结果数据进行行为的模拟。
+	答： Mock Server是一种通过接口文档进行测试，将接口与数据进行分离，通过条件和结果数据进行用户行为的模拟。
 18. 用过哪些CSS预处理器，说下其特点
 
 	答：用过Less。它支持变量，混合（类似函数定义一个属性集合），嵌套等等功能，让CSS像编程语言一样，使得对CSS的管理更加容易，重复的代码量可以减少。
@@ -500,6 +500,14 @@
 19. MongoDB如何优化
 
 	答：①造出慢语句②使用explain分析③创建索引提高查询性能④使用稀疏索引来减少空间占用⑤读写分离
+
+20. React组件的优化
+
+	答：①使用上线构建（Production Build）：会移除脚本中不必要的警告和报错，减少文件体积。	② 避免重绘 （Avoid Reconciliation）：重写 shouldComponentUpdate 函数，手动控制是否应该调用 render 函数进行重绘③尽可能的使用 Immutable Data（ The Power Of Not Mutating Data）：尽可能的不修改数据，而是重新赋值数据。这样的话，在检测数据对象是否发生修改方面会非常快，只需要检测对象引用即可，而不用挨个的检测对象属性的更改④在渲染组件的时候尽可能的添加key ，这样Virtual DOM在对比时就会更容易发现哪里，哪里是修改元素，哪里是新插入的元素。
+
+21. React中调用setState发生了什么
+
+	答：①React将传入的参数与组件当前的状态合并，触发调和过程②调和过程后，React以相对高效的方式（相对遍历）根据新的状态构建React元素树（virtual dom）并且着手重新渲染整个UI③新旧元素树（virtual dom）比较差异地方，按需渲染。
 
 ---
 
@@ -602,15 +610,13 @@ DomainA客户端（浏览器） -> DomainA服务器 -> DomainB服务器 -> Domai
 	答： DDoS、上传文件攻击、重定向攻击、Cookie攻击、Http Heads攻击、CSRF攻击、XSS攻击、散列攻击、SQL攻击、缓冲区溢出攻击。
 18. 说下你对HTTP2.0的了解
 	
-	答：①HTTP2.0使用了多路复用的技术，做到同一个连接并发处理多个请求，而且并发请求的数量比HTTP1.1大了好几个数量级。②6HTTP2.0使用HPACK算法对header的数据进行压缩，这样数据体积小了，在网络上传输就会更快。③当我们对支持HTTP2.0的web server请求数据的时候，服务器会顺便把一些客户端需要的资源一起推送到客户端，免得客户端再次创建连接发送请求到服务器端获取。适合浏览器加载静态资源。
+	答：①HTTP2.0使用了多路复用的技术，做到同一个连接并发处理多个请求，而且并发请求的数量比HTTP1.1大了好几个数量级。②HTTP2.0使用HPACK算法对header的数据进行压缩，这样数据体积小了，会转成二进制传输，所以在网络上传输就会更快。③当我们对支持HTTP2.0的web server请求数据的时候，服务器会顺便把一些客户端需要的资源一起推送到客户端，免得客户端再次创建连接发送请求到服务器端获取。适合浏览器加载静态资源。
 19. 什么是DDoS，如何防御
 
 	答：DDoS全称分布式拒绝服务攻击，原理是将多个计算机联合作为攻击平台，对一个或多个目标发起服务请求（其实是攻击），使目标站点无法正常工作。DDoS防御的方法：①利用网络设备设施保护网络资源，如：扩充带宽硬抗，使用硬件防火墙等②合理的网络架构布局提高网络负载能力③CDN流量清洗④分布式集群防御⑤过滤不使用的端口，限制特定流量。
 
+20. 负载均衡了解多少
+	答：①HTTP重定向，②DNS负载均衡，③反向代理④IP负载均衡⑤直接路由⑥IP隧道
+
 ---
 
-参考资料：
-1. [面试的信心来源于过硬的基础](https://segmentfault.com/a/1190000013331105)
-2. [前端开发面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
-3. [前端工作面试问题](https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese)
-4. [12个HTML和CSS必须知道的重点难点问题](https://juejin.im/post/5a954add6fb9a06348538c0d)
