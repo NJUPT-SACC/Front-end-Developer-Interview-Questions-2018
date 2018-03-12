@@ -10,13 +10,15 @@
 
 --- 
 ## dcison 的面试资料分享
-- 总结的一些题目，见summary.md
+- 总结的一些题目，见[summary](https://github.com/NUPT-SACC/Front-end-Developer-Interview-Questions-2018/blob/master/summary-answer-Dcison.md)
+
 - [面试分享：2018阿里巴巴前端面试总结(题目+答案)](https://funteas.com/topic/5a98cce637621be1429268ee)
 - [面试的信心来源于过硬的基础](https://segmentfault.com/a/1190000013331105)
 - [前端开发面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
 - [前端工作面试问题](https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese)
 - [12个HTML和CSS必须知道的重点难点问题](https://juejin.im/post/5a954add6fb9a06348538c0d)
 - [2017年前端面试题](http://www.imooc.com/article/20319)
+
 
 ---
 ## PrConstantin 的面试资料分享 blog -> [constantin.cc](http://constantin.cc/)
@@ -39,7 +41,6 @@
 - [整理前端面试题(十一): Vue面试题合集](https://www.jianshu.com/p/e54a9a34a773)  
 - [20道vue.js常见面试题及答案](https://www.mingtern.com/subject/9350939/)  
 - [React 常用面试题目与分析](https://zhuanlan.zhihu.com/p/24856035) 
-- [](https://huruji.github.io/FE-Interview/#/docs/JavaScript?id=_12%e4%bb%80%e4%b9%88%e6%98%af%e4%ba%8b%e4%bb%b6%e5%be%aa%e7%8e%af%ef%bc%88event-loop%ef%bc%89%ef%bc%9f) 
 - [React高阶组件(HOC)模型理论与实践](https://segmentfault.com/a/1190000008112017?_ea=1553893)
 - [FE-interview](https://github.com/qiu-deqing/FE-interview#%E6%9C%89%E4%B8%80%E4%B8%AA%E5%A4%A7%E6%95%B0%E7%BB%84var-a-=-1-2-3-a%E7%9A%84%E9%95%BF%E5%BA%A6%E6%98%AF100%E5%86%85%E5%AE%B9%E5%A1%AB%E5%85%85%E9%9A%8F%E6%9C%BA%E6%95%B4%E6%95%B0%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%AF%B7%E5%85%88%E6%9E%84%E9%80%A0%E6%AD%A4%E6%95%B0%E7%BB%84a%E7%84%B6%E5%90%8E%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%B0%86%E5%85%B6%E5%86%85%E5%AE%B9%E5%8E%BB%E9%87%8D) 
 - [很完整的一套题目](https://huruji.github.io/FE-Interview/#/docs/JavaScript) 
