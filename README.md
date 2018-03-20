@@ -18,7 +18,7 @@
 - [前端工作面试问题](https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese)
 - [12个HTML和CSS必须知道的重点难点问题](https://juejin.im/post/5a954add6fb9a06348538c0d)
 - [2017年前端面试题](http://www.imooc.com/article/20319)
-
+- [谈谈原型链、原型、继承、执行上下文及作用域链的关系](http://dcison.top/2018/03/20/%E8%B0%88%E8%B0%88%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E5%8E%9F%E5%9E%8B%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E7%9A%84%E5%85%B3%E7%B3%BB/)
 
 ---
 ## PrConstantin 的面试资料分享 blog -> [constantin.cc](http://constantin.cc/)
