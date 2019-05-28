@@ -53,3 +53,7 @@
 - [重绘和重排](http://www.yodfz.com/detail/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%87%8D%E7%BB%98%E5%92%8C%E5%9B%9E%E6%B5%81.html)
 - [React源码解读](https://zhuanlan.zhihu.com/p/32520194)
 - [前端面经](https://www.nowcoder.com/discuss/64136)
+
+## tinyhuang 的面试记录
+
+[2019春招面试记录](./tinyhuang.md)
